@@ -92,7 +92,7 @@ class ResetPassword extends HTMLElement {
           alert('Passwords do not match. Please try again.');
           return;
         }
-        console.log(' debug  New password:', newPassword);
+        // console.log(' debug  New password:', newPassword);
   
         try {
           // Send the new password to the backend
@@ -104,7 +104,7 @@ class ResetPassword extends HTMLElement {
             },
             body: JSON.stringify({email: this.email, password: newPassword }),
           });
-          console.log('Request sent to change password:', {email: this.email, password: newPassword });
+        //   console.log('Request sent to change password:', {email: this.email, password: newPassword });
 
           console.log('Response:', response);
   
